@@ -6,6 +6,8 @@
       
       -eval()
       
+      -pickle.load(model) / pickle.dumb(model,file)
+      
 **Sidenote** feature encoding:
 
 Categorical vs Numerical (discrete data and continuous data)
@@ -41,3 +43,15 @@ where ,  IQR = 75th%ile data - 25th%ile data
 __Feature Selection 
 
 Mutual info: if the MI between 2 features is 0 it means that they don't correlate
+
+__Hyperparameter Tuning/ Optimization
+
+1.Choose following method for hyperparameter tuning
+    a.RandomizedSearchCV --> Fast way to Hypertune model
+    b.GridSearchCV--> Slower way to hypertune my model
+2.Choose ML algo that u have to hypertune
+2.Assign hyperparameters in form of dictionary or create hyper-parameter space
+3.define searching &  apply searching on Training data or  Fit the CV model 
+4.Check best parameters and best score
+
+
